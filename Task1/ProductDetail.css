@@ -56,12 +56,11 @@
 
 
 .error-message {
-  color: rgb(245, 243, 243);
+  color: #f01c1c;
   font-weight: 900;
   text-align: center;
   font-size: 2rem;
   padding: 30px;
-  background-color: #bd6969;
   border-radius: 20px;
 }
 
