@@ -1,12 +1,15 @@
 .container {
-  max-width: 700px;
+  max-width: 600px;
   margin: 40px auto;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 12px;
-  background-color: #edeff0;
+  background-color: #f7f7f7;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container h2 {
@@ -18,14 +21,39 @@
 
 
 .product-info p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin: 8px 0;
   color: #555;
 }
 
 .product-info strong {
-  color: #585858;
+  color: #000000;
 }
+.product-info p .price{
+  color: green;
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.product-info h1{
+  text-align: center;
+  color: #333;
+}
+
+.product-info .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+.image-container img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 
 .error-message {
   color: rgb(245, 243, 243);
@@ -45,4 +73,22 @@
   padding: 30px;
   background-color: #b0b7f1;
   border-radius: 20px;
+}
+
+.buy-button{
+  padding: 8px 20px;
+  border-radius: 4px;
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  margin: 6px;
+}
+
+.btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
