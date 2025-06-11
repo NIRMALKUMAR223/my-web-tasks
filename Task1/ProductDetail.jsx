@@ -9,7 +9,7 @@ const ProductDetail = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`https://dummyjson.com/products/1`)
+    fetch(`https://dummyjson.com/products/${id}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error('Product not found');
