@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const SkeletonCard = () => (
   <div className="product-card skeleton">
     <div className="skeleton-img shimmer"></div>
@@ -8,4 +9,4 @@ const SkeletonCard = () => (
   </div>
 );
 
-export default SkeletonCard;
+export default SkeletonCard; 

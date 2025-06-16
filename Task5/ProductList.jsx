@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './ProductList.css'; 
-import SkeletonCard from './SkeletonCard'; 
-
+import './ProductList.css';
+import SkeletonCard from './SkeletonCard';
 
 const ProductList = () => {
   const PRODUCTS_PER_PAGE = 10;
@@ -49,12 +48,15 @@ const ProductList = () => {
           {loading
             ? Array.from({ length: PRODUCTS_PER_PAGE }).map((_, i) => <SkeletonCard key={i} />)
             : products.map((product) => (
-                <div className="product-card" key={product.id}>
-                  <img src={product.thumbnail} alt={product.title} className="product-img" />
-                  <h3 className="product-title">{product.title}</h3>
-                  <p className="product-price">₹ {product.price}</p>
+              <div className="product-card" key={product.id}>
+                <img src={product.thumbnail} alt={product.title} className="product-img" />
+                <h3 className="product-title">{product.title}</h3>
+                <p className="product-price">$ {product.price}</p>
+                <div className="btn">
+                  <button className='buy-button'>Add to cart</button>
                 </div>
-              ))}
+              </div>
+            ))}
         </div>
       )}
 
