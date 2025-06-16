@@ -3,6 +3,7 @@ import axios from 'axios';
 import './ProductList.css'; 
 import SkeletonCard from './SkeletonCard'; 
 
+
 const ProductList = () => {
   const PRODUCTS_PER_PAGE = 10;
   const [products, setProducts] = useState([]);
